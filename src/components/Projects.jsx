@@ -22,11 +22,13 @@ const Projects = () => {
                 <div className="item__btn">
                   <button>
                     <a href="https://tipcalculator-reydel.netlify.app/"
+                    rel="noreferrer"
                       >Visit Webpage</a
                     >
                   </button>
                   <button>
                     <a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer"
                       >Github</a
                     >
                   </button>
@@ -44,8 +46,10 @@ const Projects = () => {
                   <p><span className="lang__used">HTML / CSS / JS</span></p>
                 </div>
                 <div className="item__btn">
-                  <button><a href="#">Visit Webpage</a></button>
-                  <button><a href="#">Github</a></button>
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Visit Webpage</a></button>
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Github</a></button>
                 </div>
               </div>
             </div>
@@ -57,6 +61,7 @@ const Projects = () => {
                 href="https://github.com/reydelshit"
                 target="_blank"
                 className="projects__footer__github"
+                rel="noreferrer"
                 > Github</a
               ></span
             ></span

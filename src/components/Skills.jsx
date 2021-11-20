@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faVuejs, faFacebook, faHtml5, faSass, faNodeJs, faGitAlt, faFigma, faJs  } from '@fortawesome/free-brands-svg-icons'
+import { faVuejs, faHtml5, faSass, faNodeJs, faGitAlt, faFigma, faJs  } from '@fortawesome/free-brands-svg-icons'
 
 
 const Skills = () => {

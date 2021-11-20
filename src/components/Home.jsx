@@ -19,7 +19,9 @@ const Home = () => {
               <a href="https://github.com/reydelshit" 
               className="soc__icons"
               title="Github"
-              target="_blank">
+              target="_blank"
+              rel='noreferrer'>
+              
             <FontAwesomeIcon icon={faGithub } />
               </a>
             <a
@@ -27,6 +29,7 @@ const Home = () => {
               className="soc__icons"
               title="Facebook"
               target="_blank"
+              rel='noreferrer'
               >
             <FontAwesomeIcon icon={ faFacebook } />
               </a>
