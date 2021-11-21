@@ -1,3 +1,7 @@
+import './css/projects.css'
+
+
+
 
 const Projects = () => {
     return ( 

@@ -1,3 +1,5 @@
+import './css/contact.css'
+
 const Contact = () => {
     return ( 
         <div className="contact__form">

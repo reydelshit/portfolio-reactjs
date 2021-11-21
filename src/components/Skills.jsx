@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVuejs, faHtml5, faSass, faNodeJs, faGitAlt, faFigma, faJs  } from '@fortawesome/free-brands-svg-icons'
-
+import './css/techs.css'
 
 const Skills = () => {
     return ( 

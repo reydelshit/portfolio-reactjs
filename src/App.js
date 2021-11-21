@@ -6,24 +6,25 @@ import Contact from './components/Contact'
 import Separator from './components/Separator'
 import Footer from './components/Footer'
 
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
 
 
 function App() {
     return(
             <div className='App'>
             <Header/>
-            <Home/>
-            <Projects/>
+             <Home/>
+
+            {/* <Projects/>
             <Separator/>
             <Skills/>
             <Separator/>
             <Contact/>
             <Separator/>
-            <Footer/>
+            <Footer/> */}
             
             </div>
     )
 }
 
-export default App
+export default App;
