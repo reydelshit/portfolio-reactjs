@@ -1,25 +1,38 @@
 import './css/contact.css'
+import { LightSpeed, Bounce } from 'react-reveal';
 
 const Contact = () => {
     return ( 
         <div className="contact__form">
             <div className="contact__container">
                 <div className="contact__header">
+                                        
+                <Bounce left>
                     <h2>Let's talk</h2>
-                    <p>Have a question? or Just want to say hi?</p>
+                    <p>Have a question? or Just want to say hi?</p>                     
+                </Bounce>
                 </div>
                 <label for="name">Name</label>
-                    <input type="text" placeholder="Snail Man" />
+                <Bounce top delay={350}>
+                <input type="text" placeholder="Snail Man" />
+                </Bounce>
                 <label for="email">Email</label>
+                <Bounce right delay={450}>
                     <input type="email" placeholder="snail@something.com" />
+                </Bounce>
                 <label for="message">Message</label>
+                <Bounce left delay={570}>
                     <textarea
                     name="message"
                     placeholder="Your question, feedback or message goes here"
                     ></textarea>
+                </Bounce>
+                <LightSpeed delay={600}>
                 <div className="submit__btn">
                     <button>Submit</button>
                 </div>
+                </LightSpeed>
+                <Bounce>
                     <span className="projects__footer"
                     >or just contact me directly at
                     <span>
@@ -30,6 +43,8 @@ const Contact = () => {
                         rel='noreferrer'
                         > reydel@snail.com</a
                         ></span></span>
+                                        
+                </Bounce>
             </div>
     </div>
      );
