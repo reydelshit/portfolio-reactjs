@@ -32,7 +32,7 @@ const Header = () => {
               <div className={ menu ? "renderMenu" : "menu"}>
                 <Link to='/'>home</Link>
                 <Link to='/projects'>projects</Link>
-                <Link to='/skills'>techs</Link>
+                <Link to='/techs'>techs</Link>
                 <Link to='/contact'>contact</Link>
             </div>
           <input type="checkbox" className="switch" onClick={changeBg} />
