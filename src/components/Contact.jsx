@@ -28,7 +28,7 @@ const Contact = () => {
                         target="_blank"
                         className="projects__footer__github"
                         rel='noreferrer'
-                        >reydel@snail.com</a
+                        > reydel@snail.com</a
                         ></span></span>
             </div>
     </div>
