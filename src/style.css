@@ -19,12 +19,13 @@
 
 body {
     
-    color: var(--text-color);
     min-height: 100vh;
+    color: var(--text-color);
     font-family: var(--main-font-poppins345);
     overflow-x: hidden;
     transition: all 0.4s ease-in-out;
     position: relative;
+
 }
 
 body::after{
@@ -161,19 +162,6 @@ p {
 }
 
 
-
-footer{
-    width: 100%;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-end;
-    background: var(--items-color);
-    position: absolute;
-    bottom: 0;
-}
-
 @media screen and (max-width: 995px){
 
     
@@ -199,10 +187,6 @@ footer{
     
     .seperator{
         width: 70%;
-    }
-
-    footer{
-        position: unset;
     }
 
     

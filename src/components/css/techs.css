@@ -19,11 +19,6 @@
     text-align: center;
 }
 
-.techs__header{
-
-    width: 74%;
-    text-align: start;
-}
 
 .techs__container > *{
     margin-bottom: 2rem;
@@ -98,7 +93,6 @@
     
     .techs__header{
 
-        width: 100%;
         text-align: start;
     }
     .techs__skill{

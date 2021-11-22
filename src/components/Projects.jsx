@@ -56,6 +56,150 @@ const Projects = () => {
                 </div>
               </div>
             </div>
+            <div className="project__item2 items">
+              <div className="container__item">
+                <div className="item__header">
+                  <h2>TAB URL GRABBER</h2>
+                  <p>
+                    An extension than can grab any links from the current tab
+                    which is useful if you wanted to save the link.
+                  </p>
+                  <p><span className="lang__used">HTML / CSS / JS</span></p>
+                </div>
+                <div className="item__btn">
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Visit Webpage</a></button>
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Github</a></button>
+                </div>
+              </div>
+            </div>
+            <div className="project__item2 items">
+              <div className="container__item">
+                <div className="item__header">
+                  <h2>TAB URL GRABBER</h2>
+                  <p>
+                    An extension than can grab any links from the current tab
+                    which is useful if you wanted to save the link.
+                  </p>
+                  <p><span className="lang__used">HTML / CSS / JS</span></p>
+                </div>
+                <div className="item__btn">
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Visit Webpage</a></button>
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Github</a></button>
+                </div>
+              </div>
+            </div>
+            <div className="project__item2 items">
+              <div className="container__item">
+                <div className="item__header">
+                  <h2>TAB URL GRABBER</h2>
+                  <p>
+                    An extension than can grab any links from the current tab
+                    which is useful if you wanted to save the link.
+                  </p>
+                  <p><span className="lang__used">HTML / CSS / JS</span></p>
+                </div>
+                <div className="item__btn">
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Visit Webpage</a></button>
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Github</a></button>
+                </div>
+              </div>
+            </div>
+            <div className="project__item2 items">
+              <div className="container__item">
+                <div className="item__header">
+                  <h2>TAB URL GRABBER</h2>
+                  <p>
+                    An extension than can grab any links from the current tab
+                    which is useful if you wanted to save the link.
+                  </p>
+                  <p><span className="lang__used">HTML / CSS / JS</span></p>
+                </div>
+                <div className="item__btn">
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Visit Webpage</a></button>
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Github</a></button>
+                </div>
+              </div>
+            </div>
+            <div className="project__item2 items">
+              <div className="container__item">
+                <div className="item__header">
+                  <h2>TAB URL GRABBER</h2>
+                  <p>
+                    An extension than can grab any links from the current tab
+                    which is useful if you wanted to save the link.
+                  </p>
+                  <p><span className="lang__used">HTML / CSS / JS</span></p>
+                </div>
+                <div className="item__btn">
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Visit Webpage</a></button>
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Github</a></button>
+                </div>
+              </div>
+            </div>
+            <div className="project__item2 items">
+              <div className="container__item">
+                <div className="item__header">
+                  <h2>TAB URL GRABBER</h2>
+                  <p>
+                    An extension than can grab any links from the current tab
+                    which is useful if you wanted to save the link.
+                  </p>
+                  <p><span className="lang__used">HTML / CSS / JS</span></p>
+                </div>
+                <div className="item__btn">
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Visit Webpage</a></button>
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Github</a></button>
+                </div>
+              </div>
+            </div>
+            <div className="project__item2 items">
+              <div className="container__item">
+                <div className="item__header">
+                  <h2>TAB URL GRABBER</h2>
+                  <p>
+                    An extension than can grab any links from the current tab
+                    which is useful if you wanted to save the link.
+                  </p>
+                  <p><span className="lang__used">HTML / CSS / JS</span></p>
+                </div>
+                <div className="item__btn">
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Visit Webpage</a></button>
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Github</a></button>
+                </div>
+              </div>
+            </div>
+            <div className="project__item2 items">
+              <div className="container__item">
+                <div className="item__header">
+                  <h2>TAB URL GRABBER</h2>
+                  <p>
+                    An extension than can grab any links from the current tab
+                    which is useful if you wanted to save the link.
+                  </p>
+                  <p><span className="lang__used">HTML / CSS / JS</span></p>
+                </div>
+                <div className="item__btn">
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Visit Webpage</a></button>
+                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                    rel="noreferrer">Github</a></button>
+                </div>
+              </div>
+            </div>
           </div>
           <span className="projects__footer"
             >Check out all my projecs on

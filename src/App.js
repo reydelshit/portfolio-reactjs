@@ -6,7 +6,6 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
@@ -22,9 +21,6 @@ function App() {
                         <Route exact path='/contact' element={<Contact/>}/>
                     </Routes>
                 </Router>
-              
-                        
-                <Footer/>
 
             {/* <Projects/>
             <Separator/>
@@ -32,9 +28,10 @@ function App() {
             <Separator/>
             <Contact/>
             <Separator/>
-            <Footer/> */}
-            
+            <Footer/> */}    
+            <Footer/>
             </div>
+            
            
     )
 }
