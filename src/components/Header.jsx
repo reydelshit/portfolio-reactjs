@@ -3,16 +3,31 @@ import { Link } from 'react-router-dom'
 import './css/header.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes, faMoon, faPooStorm} from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
 
   const [ menu, setMenu ] = useState(false)
+  const [ bg, setBg ] = useState(false)
 
 
+
+
+    // const changeBg = () => {
+    //     document.body.classList.toggle('darkmode')
+    // }
 
     const changeBg = () => {
-        document.body.classList.toggle('darkmode')
+        // document.body.classList.toggle('darkmode')
+
+        bg ? setBg(false) : setBg(true)
+
+        if(setBg === false) {
+          document.body.classList.toggle('darkmode')
+        } else {
+          document.body.classList.toggle('darkmode')
+        }
+
     }
 
 
@@ -35,7 +50,9 @@ const Header = () => {
                 <Link to='/techs'>techs</Link>
                 <Link to='/contact'>contact</Link>
             </div>
-          <input type="checkbox" className="switch" onClick={changeBg} />
+            <button onClick={changeBg}>
+               { bg ? <FontAwesomeIcon icon={ faPooStorm } className="sun"/> :  <FontAwesomeIcon icon={ faMoon } className="moon" />}
+              </button>
         </nav>
         </header>
      );

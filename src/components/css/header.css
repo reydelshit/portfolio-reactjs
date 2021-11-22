@@ -76,7 +76,7 @@
 
 nav {
 
-    height: 4rem;
+    height: 5rem;
     width: 100%;
     padding: 0 2rem 0 5rem;
     display: flex;
@@ -86,40 +86,29 @@ nav {
 }
 
 
-input[type="checkbox"].switch{
-    appearance: none;
-    width: 2em;
-    height: 1em;
-    background: #ddd;
-    border-radius: 3em;
-    position: relative;
+
+button{
+
+    background: none;
+    border: none;
     cursor: pointer;
-    outline: none;
-    transition: all .2s ease-in-out;
 }
 
-input[type="checkbox"].switch:after{
-    position: absolute;
-    content: "";
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    background: var(--main-color);
-    box-shadow: 0 0 .25em rgba(0,0,0,.3);
-    transform: scale(.7);
-    left: 0;
-    transition: all .2s ease-in-out;
-}
+.sun {
+    
+    color: var(--DefaultColor);
+    font-size: 1.5rem;
 
-input[type="checkbox"].switch:checked:after{
-    left: calc(100% - 1em);
-}
-
-input[type="checkbox"].switch:checked{
-    background: var(--DefaultColor);
 
 }
 
+.moon{
+
+    transform: rotate(-20deg);
+    color: var(--main-color);
+    font-size: 1.5rem;
+
+}
 
 
 .hamburger {
