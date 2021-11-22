@@ -16,10 +16,10 @@ function App() {
             <Router>
                  <Header/>
                     <Routes>
-                        <Route path='/' element={<Home/>}/>
-                        <Route path='/projects' element={<Projects/>}/>
-                        <Route path='/skills' element={<Techs/>}/>
-                        <Route path='/contact' element={<Contact/>}/>
+                        <Route exact path='/' element={<Home/>}/>
+                        <Route exact path='/projects' element={<Projects/>}/>
+                        <Route exact path='/skills' element={<Techs/>}/>
+                        <Route exact path='/contact' element={<Contact/>}/>
                     </Routes>
                 </Router>
               

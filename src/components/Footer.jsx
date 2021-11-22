@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="footer__container">
             <span>© Reydel Ocon 2021</span>
             </div>
-      </footer>
+        </footer>
      );
 }
  
