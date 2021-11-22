@@ -42,7 +42,6 @@ const Header = () => {
              <nav className="navigation">
              <button className="hamburger" onClick={menuBar}>
                { menu ? <FontAwesomeIcon icon={ faTimes } /> :  <FontAwesomeIcon icon={ faBars } />}
-             
               </button>
               <div className={ menu ? "renderMenu" : "menu"}>
                 <Link to='/'>home</Link>
