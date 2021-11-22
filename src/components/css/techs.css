@@ -2,7 +2,7 @@
 .techs{
 
     width: 100%;
-    height: 400px;
+    height: 700px;
     
 
 }
@@ -11,10 +11,18 @@
 
     display: flex;
     width: 100%;
+    height: 100%;
     align-items: center;
+    justify-content: center;
     margin: auto;
     flex-direction: column;
     text-align: center;
+}
+
+.techs__header{
+
+    width: 74%;
+    text-align: start;
 }
 
 .techs__container > *{
@@ -83,13 +91,14 @@
     
 
     .techs{
-        height: 800px;
+        height: 100%;
         width: 100%;
         padding: 2em;
     } 
     
     .techs__header{
 
+        width: 100%;
         text-align: start;
     }
     .techs__skill{

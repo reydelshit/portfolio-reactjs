@@ -8,11 +8,18 @@
     width: 100%;
     text-align: center;
 
+    position: static;
+
 
 }
 
-.projects__header, .projects__header h2{
+.projects__header{
 
+    width: 100%;
+    text-align: start;
+}
+
+.projects__header, .projects__header h2{
 
     margin-bottom: 2rem;
 
@@ -20,7 +27,7 @@
 
 .projects__container{
     
-    width: 40rem;
+    width: 50rem;
     padding: 2rem;
     
 }
@@ -47,7 +54,7 @@
     
     .projects{
 
-        height: 800px;
+        height: 100%;
     }   
     .projects__header {
         text-align: start;

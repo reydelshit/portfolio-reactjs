@@ -37,6 +37,7 @@ const Home = () => {
                     >
                   <FontAwesomeIcon icon={ faFacebook } />
                     </a>
+                  
                 </div>
               </div>
               <div className="blog__container">      

@@ -1,0 +1,164 @@
+
+.menu {
+
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+}
+
+.menu a{
+
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--main-font-poppins345);
+    font-weight: 500;
+
+    cursor: pointer;
+    position: relative;
+    transition: ease-in 0.1s;
+
+}
+
+.menu a::after{
+
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: var(--main-color);
+
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease;
+
+}
+
+.renderMenu a{
+
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--main-font-poppins345);
+    font-weight: 500;
+
+    cursor: pointer;
+    position: relative;
+    transition: ease-in 0.1s;
+}
+
+.renderMenu a::after{
+
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: var(--main-color);
+
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.menu a:hover::after{
+
+    transform: scale(1, 1);
+}
+
+
+
+/* header styles */
+
+nav {
+
+    height: 4rem;
+    width: 100%;
+    padding: 0 2rem 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+input[type="checkbox"].switch{
+    appearance: none;
+    width: 2em;
+    height: 1em;
+    background: #ddd;
+    border-radius: 3em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+
+input[type="checkbox"].switch:after{
+    position: absolute;
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: var(--main-color);
+    box-shadow: 0 0 .25em rgba(0,0,0,.3);
+    transform: scale(.7);
+    left: 0;
+    transition: all .2s ease-in-out;
+}
+
+input[type="checkbox"].switch:checked:after{
+    left: calc(100% - 1em);
+}
+
+input[type="checkbox"].switch:checked{
+    background: var(--DefaultColor);
+
+}
+
+
+
+.hamburger {
+    display: none;
+
+    color: var(--main-color);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 995px){
+
+    nav{
+        padding-left: 2rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .renderMenu{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        left: 0;
+        margin-top: 10rem;
+        width: 100%;
+        height: 8rem;
+
+        background-color: var(--menu-color);
+
+    }
+}

@@ -6,7 +6,7 @@
     --text-color: hsla(0, 0%, 0%, 0.9);
     --DefaultColor: hsla(173, 96%, 100%, 0.9);
 
-
+    --menu-color: hsla(32, 100%, 75%, 1);
     --items-color: rgba(223, 220, 220, 0.52);
 }
 
@@ -38,6 +38,7 @@ body::after{
     top: 0;
     width: 100%;
     height: 0.5rem;
+    z-index: 1;
 
 }
 
@@ -51,21 +52,11 @@ body::before{
     top: 0;
     width: 0.5rem;
     height: 100%;
+    z-index: 1;
+
 
 }
 
-/* header styles */
-
-nav {
-
-    height: 4rem;
-    width: 100%;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-
-}
 
 /*dark mode */
 
@@ -75,43 +66,10 @@ body.darkmode{
     
     --items-color: #22272e;
     --text-color: hsla(0, 0%, 99%, 0.9);
-}
-
-
-
-input[type="checkbox"].switch{
-    appearance: none;
-    width: 2em;
-    height: 1em;
-    background: #ddd;
-    border-radius: 3em;
-    position: relative;
-    cursor: pointer;
-    outline: none;
-    transition: all .2s ease-in-out;
-}
-
-input[type="checkbox"].switch:after{
-    position: absolute;
-    content: "";
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    background: var(--main-color);
-    box-shadow: 0 0 .25em rgba(0,0,0,.3);
-    transform: scale(.7);
-    left: 0;
-    transition: all .2s ease-in-out;
-}
-
-input[type="checkbox"].switch:checked:after{
-    left: calc(100% - 1em);
-}
-
-input[type="checkbox"].switch:checked{
-    background: var(--DefaultColor);
+    --menu-color: hsla(32, 100%, 45%, 1);
 
 }
+
 
 
 /*=====================================*/
@@ -220,17 +178,6 @@ p {
     transition: width ease-in 0.3s;
 } */
 
-.seperator{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5rem auto;
-    width: 40%;
-    height: 2px;
-    background: var(--main-color);
-
-}
 
 
 @media screen and (max-width: 995px){
