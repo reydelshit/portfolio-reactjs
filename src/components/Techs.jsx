@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVuejs, faHtml5, faSass, faNodeJs, faGitAlt, faFigma, faJs  } from '@fortawesome/free-brands-svg-icons'
 import './css/techs.css'
-import { LightSpeed, Rotate } from 'react-reveal'
+import { LightSpeed} from 'react-reveal'
 
 const Skills = () => {
     return ( 
@@ -53,13 +53,13 @@ const Skills = () => {
               <span className="tech__subtitle">Software Development</span>
             </div>
             </LightSpeed>
-            <Rotate top left>
+            <LightSpeed left>
             <div className="techsBro seven">
               <FontAwesomeIcon icon={ faVuejs } className='icons icons__techs'/>
               <span className="tech__skill__title">React JS / Vue JS</span>
               <span className="tech__subtitle">JS Frameworks</span>
             </div>
-            </Rotate>
+            </LightSpeed>
           </div>
         </div>
       </div>
