@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFacebook  } from '@fortawesome/free-brands-svg-icons'
 import { LightSpeed, Bounce } from 'react-reveal';
-
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
                 <p className="description">
                   I've been interested in web development since my high school years,
                   though I stopped for a while because I was addicted to video games
-                  and other stuff, but right now I am completely dedicated. Letsgo!
+                  and other stuff, but right now I am completely dedicated. Lets go!
                 </p>
                 </LightSpeed>
                 <div class="icons__yow">
@@ -42,7 +42,7 @@ const Home = () => {
                     rel='noreferrer'
                     >
                         <FontAwesomeIcon icon={ faFacebook } />
-                    </a>
+                    </a>  
                     </Bounce>
                 </div>
               </div>

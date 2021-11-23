@@ -3,14 +3,17 @@
 :root{
     --main-font-poppins345: 'Poppins', sans-serif;
     --main-color: hsla(32, 100%, 45%, 1);
-    --text-color: hsla(0, 0%, 0%, 0.9);
+    --text-color: hsla(0, 0%, 99%, 0.9);
     --DefaultColor: hsla(173, 96%, 100%, 0.9);
 
     --menu-color: hsla(173, 96%, 100%, 0.9);
 
-    /* --menu-color: hsla(32, 100%, 75%, 1); */
 
-    --items-color: rgba(223, 220, 220, 0.52);
+    --darkbackground: #22272e;
+    --text-white: hsla(0, 0%, 99%, 0.9);
+    --whitebackground: hsla(0, 0%, 99%, 0.9);
+
+    --footerbg: rgba(223, 220, 220, 0.52);
 }
 
 * {
@@ -25,6 +28,7 @@ body {
     min-height: 100vh;
     color: var(--text-color);
     font-family: var(--main-font-poppins345);
+    background: var(--darkbackground);
     overflow-x: hidden;
     transition: all 0.4s ease-in-out;
     position: relative;
@@ -64,10 +68,9 @@ body::before{
 
 body.darkmode{
 
-    background: #22272e;
-    
-    --items-color: #22272e;
-    --text-color: hsla(0, 0%, 99%, 0.9);
+    background: var(--whitebackground);
+    --darkbackground: hsla(0, 0%, 99%, 0.9);
+    --text-color: hsla(0, 0%, 0%, 0.9);
     --menu-color: #22272e;
 
 }
@@ -151,7 +154,7 @@ p {
 .icons__yow a{
 
     color: var(--text-color);
-    font-size: 1.8em;
+    font-size: 1.7em;
     padding: 0;
     text-align: start;
 }

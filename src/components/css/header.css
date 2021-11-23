@@ -90,19 +90,20 @@ button{
     cursor: pointer;
 }
 
-.sun {
+.on {
     
-    color: var(--DefaultColor);
-    font-size: 1.5rem;
+    background-color: var(--text-color);
+    border-radius: 1.8rem;
+    width: 1.8rem;
+    height: 1.8rem;
 
 
 }
 
-.moon{
+.off{
 
-    transform: rotate(-20deg);
-    color: var(--main-color);
-    font-size: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
 
 }
 

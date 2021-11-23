@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom'
 import './css/header.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes, faMoon, faAdjust} from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
 import { Bounce } from 'react-reveal'
+import Bulb from './css/ass/bulb.svg'
+import Moon from './css/ass/moon.svg'
 
 const Header = () => {
 
@@ -45,7 +47,7 @@ const Header = () => {
             </div>
             </Bounce>
             <button onClick={changeBg}>
-               { bg ? <FontAwesomeIcon icon={ faAdjust } className="sun"/> :  <FontAwesomeIcon icon={ faMoon } className="moon" />}
+               { bg ? <img src={ Moon } className="off"/> :  <img src={Bulb} className="on" />}
               </button>
         </nav>
         </header>
