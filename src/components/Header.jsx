@@ -3,22 +3,15 @@ import { Link } from 'react-router-dom'
 import './css/header.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes, faMoon, faPooStorm} from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes, faMoon, faAdjust} from '@fortawesome/free-solid-svg-icons'
+import { Bounce } from 'react-reveal'
 
 const Header = () => {
 
   const [ menu, setMenu ] = useState(false)
   const [ bg, setBg ] = useState(false)
 
-
-
-
-    // const changeBg = () => {
-    //     document.body.classList.toggle('darkmode')
-    // }
-
     const changeBg = () => {
-        // document.body.classList.toggle('darkmode')
 
         bg ? setBg(false) : setBg(true)
 
@@ -43,14 +36,16 @@ const Header = () => {
              <button className="hamburger" onClick={menuBar}>
                { menu ? <FontAwesomeIcon icon={ faTimes } /> :  <FontAwesomeIcon icon={ faBars } />}
               </button>
+              <Bounce left>
               <div className={ menu ? "renderMenu" : "menu"}>
                 <Link to='/'>home</Link>
                 <Link to='/projects'>projects</Link>
                 <Link to='/techs'>techs</Link>
                 <Link to='/contact'>contact</Link>
             </div>
+            </Bounce>
             <button onClick={changeBg}>
-               { bg ? <FontAwesomeIcon icon={ faPooStorm } className="sun"/> :  <FontAwesomeIcon icon={ faMoon } className="moon" />}
+               { bg ? <FontAwesomeIcon icon={ faAdjust } className="sun"/> :  <FontAwesomeIcon icon={ faMoon } className="moon" />}
               </button>
         </nav>
         </header>

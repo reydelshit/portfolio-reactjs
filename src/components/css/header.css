@@ -4,6 +4,8 @@
     display: flex;
     width: 20rem;
     justify-content: space-between;
+   
+
 }
 
 .menu a{
@@ -12,7 +14,6 @@
     color: var(--text-color);
     font-family: var(--main-font-poppins345);
     font-weight: 500;
-
     cursor: pointer;
     position: relative;
     transition: ease-in 0.1s;
@@ -28,7 +29,6 @@
     bottom: 0;
     left: 0;
     background: var(--main-color);
-
     transform: scale(0, 1);
     transform-origin: 0% 100%;
     transition: transform 0.3s ease;
@@ -41,7 +41,6 @@
     color: var(--text-color);
     font-family: var(--main-font-poppins345);
     font-weight: 500;
-
     cursor: pointer;
     position: relative;
     transition: ease-in 0.1s;
@@ -56,7 +55,6 @@
     bottom: 0;
     left: 0;
     background: var(--main-color);
-
     transform: scale(0, 1);
     transform-origin: 0% 100%;
     transition: transform 0.3s ease;
@@ -84,8 +82,6 @@ nav {
     align-items: center;
 
 }
-
-
 
 button{
 
@@ -125,27 +121,35 @@ button{
         padding-left: 2rem;
     }
 
+    button{
+        z-index: 2;
+    }
+
     .hamburger {
+
+        z-index: 2;
         display: flex;
+
     }
 
     .menu{
+
         display: none;
     }
 
     .renderMenu{
 
         display: flex;
+        z-index: 1;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-
+        padding-top: 10rem;
+        font-size: 2rem;
         position: absolute;
         left: 0;
-        margin-top: 12rem;
+        bottom: 0;
         width: 100%;
-        height: 8rem;
-        z-index: 1;
+        height: 100%;
         background-color: var(--menu-color);
 
     }

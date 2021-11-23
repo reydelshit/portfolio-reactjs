@@ -20,7 +20,7 @@
     top: 0;
     width: 0.4rem;
     height: 100%;
-    z-index: 1;
+    z-index: 3;
 }
 
 .projects__header, .projects__header h2{
@@ -58,6 +58,7 @@
     
     .projects{
 
+        display: block;
         height: 100%;
     }   
     .projects__header {

@@ -6,7 +6,10 @@
     --text-color: hsla(0, 0%, 0%, 0.9);
     --DefaultColor: hsla(173, 96%, 100%, 0.9);
 
-    --menu-color: hsla(32, 100%, 75%, 1);
+    --menu-color: hsla(173, 96%, 100%, 0.9);
+
+    /* --menu-color: hsla(32, 100%, 75%, 1); */
+
     --items-color: rgba(223, 220, 220, 0.52);
 }
 
@@ -51,7 +54,7 @@ body::before{
     top: 0;
     width: 0.4rem;
     height: 100%;
-    z-index: 1;
+    z-index: 3;
 
 
 }
@@ -65,7 +68,7 @@ body.darkmode{
     
     --items-color: #22272e;
     --text-color: hsla(0, 0%, 99%, 0.9);
-    --menu-color: hsla(32, 100%, 45%, 1);
+    --menu-color: #22272e;
 
 }
 
@@ -127,7 +130,6 @@ p {
     bottom: 0;
     left: 0;
     background: var(--main-color);
-
     transform: scale(0, 1);
     transform-origin: 0% 100%;
     transition: transform 0.3s ease;
