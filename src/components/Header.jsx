@@ -32,6 +32,10 @@ const Header = () => {
 
     }
 
+    const displayNone = () => {
+      setMenu(false)
+    }
+
     return ( 
         <header>
              <nav className="navigation">
@@ -40,10 +44,10 @@ const Header = () => {
               </button>
               <Bounce left>
               <div className={ menu ? "renderMenu" : "menu"}>
-                <Link to='/'>home</Link>
-                <Link to='/projects'>projects</Link>
-                <Link to='/techs'>techs</Link>
-                <Link to='/contact'>contact</Link>
+                <Link to='/' onClick={displayNone}>home</Link>
+                <Link to='/projects' onClick={displayNone}>projects</Link>
+                <Link to='/techs'onClick={displayNone}>techs</Link>
+                <Link to='/contact'onClick={displayNone}>contact</Link>
             </div>
             </Bounce>
             <button onClick={changeBg}>
