@@ -47,7 +47,7 @@ const Header = () => {
             </div>
             </Bounce>
             <button onClick={changeBg}>
-               { bg ? <img src={ Moon } className="off"/> :  <img src={Bulb} className="on" />}
+               { bg ? <img src={ Moon } alt='moon' className="off"/> :  <img src={Bulb} alt='bulb' className="on" />}
               </button>
         </nav>
         </header>

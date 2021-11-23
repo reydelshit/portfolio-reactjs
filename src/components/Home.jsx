@@ -2,7 +2,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFacebook  } from '@fortawesome/free-brands-svg-icons'
 import { LightSpeed, Bounce } from 'react-reveal';
-import { Link } from 'react-router-dom';
 
 
 const Home = () => {
