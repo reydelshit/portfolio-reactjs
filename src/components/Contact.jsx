@@ -12,15 +12,15 @@ const Contact = () => {
                     <p>Have a question? or Just want to say hi?</p>                     
                 </Bounce>
                 </div>
-                <label for="name">Name</label>
+                <label>Name</label>
                 <Bounce top delay={350}>
                 <input type="text" placeholder="Snail Man" />
                 </Bounce>
-                <label for="email">Email</label>
+                <label>Email</label>
                 <Bounce right delay={450}>
                     <input type="email" placeholder="snail@something.com" />
                 </Bounce>
-                <label for="message">Message</label>
+                <label>Message</label>
                 <Bounce left delay={570}>
                     <textarea
                     name="message"

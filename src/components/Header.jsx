@@ -24,16 +24,9 @@ const Header = () => {
         }
 
     }
-
-
     const menuBar = () => {
-      
       menu ? setMenu(false) : setMenu(true)
 
-    }
-
-    const displayNone = () => {
-      setMenu(false)
     }
 
     return ( 
@@ -44,10 +37,10 @@ const Header = () => {
               </button>
               <Bounce left>
               <div className={ menu ? "renderMenu" : "menu"}>
-                <Link to='/' onClick={displayNone}>home</Link>
-                <Link to='/projects' onClick={displayNone}>projects</Link>
-                <Link to='/techs'onClick={displayNone}>techs</Link>
-                <Link to='/contact'onClick={displayNone}>contact</Link>
+                <Link to='/' onClick={() => setMenu(false)}>home</Link>
+                <Link to='/projects' onClick={() => setMenu(false)}>projects</Link>
+                <Link to='/techs'onClick={() => setMenu(false)}>techs</Link>
+                <Link to='/contact'onClick={() => setMenu(false)}>contact</Link>
             </div>
             </Bounce>
             <button onClick={changeBg}>
