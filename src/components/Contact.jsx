@@ -13,11 +13,11 @@ const Contact = () => {
                 </Bounce>
                 </div>
                 <label>Name</label>
-                <Bounce top delay={350}>
+                <Bounce left delay={350}>
                 <input type="text" placeholder="Snail Man" />
                 </Bounce>
                 <label>Email</label>
-                <Bounce right delay={450}>
+                <Bounce left delay={450}>
                     <input type="email" placeholder="snail@something.com" />
                 </Bounce>
                 <label>Message</label>
