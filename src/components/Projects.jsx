@@ -56,9 +56,26 @@ const Projects = () => {
                   <p><span className="lang__used">HTML / CSS / JS</span></p>
                 </div>
                 <div className="item__btn">
-                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                  <button><a href="https://github.com/reydelshit/tab-url-grabber-extension"
                     rel="noreferrer">Visit Webpage</a></button>
-                  <button><a href="https://github.com/reydelshit/tip-calculator"
+                  <button><a href="https://github.com/reydelshit/tab-url-grabber-extension"
+                    rel="noreferrer">Github</a></button>
+                </div>
+              </div>
+            </div>
+            <div className="project__item3 items">
+              <div className="container__item">
+                <div className="item__header">
+                  <h2>TODO LIST</h2>
+                  <p>
+                  A website which you can list all of your task that you need to complete, or things that you want to do
+                  </p>
+                  <p><span className="lang__used">REACT / HTML / CSS </span></p>
+                </div>
+                <div className="item__btn">
+                  <button><a href="https://rtodolistp.netlify.app/"
+                    rel="noreferrer">Visit Webpage</a></button>
+                  <button><a href="https://github.com/reydelshit/todolist-react"
                     rel="noreferrer">Github</a></button>
                 </div>
               </div>
