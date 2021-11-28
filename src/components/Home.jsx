@@ -17,7 +17,7 @@ const Home = () => {
                     I'm <span className="name">Reydel Ocon</span>.
                   </h2>
                   </LightSpeed> 
-               <LightSpeed right delay={350}>
+               <LightSpeed left delay={350}>
                 <p className="description">
                   I've been interested in web development since my high school years,
                   though I stopped for a while because I was addicted to video games
@@ -25,7 +25,7 @@ const Home = () => {
                 </p>
                 </LightSpeed>
                 <div class="icons__yow">
-                <Bounce bottom>
+                <Bounce top>
                     <a href="https://github.com/reydelshit" 
                     className="soc__icons"
                     title="Github"
