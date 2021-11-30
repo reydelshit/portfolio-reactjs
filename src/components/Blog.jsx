@@ -35,8 +35,8 @@ const Blog = () => {
     // window.addEventListener('DOMContentLoaded', ()=> renderPosts());
 
     return ( 
-        <div className="blog__container">
-            <div className="blog__header">
+        <div className='blog__container'>
+            <div className='blog__header'>
             <h2 className='blog__title'>{blog.length} POSTS <FontAwesomeIcon icon={ faWifi } className='blog__wifi'/></h2>
             <a href='https://github.com/reydelshit'
             title="Github"
@@ -45,7 +45,7 @@ const Blog = () => {
             >View site code   <FontAwesomeIcon icon={ faGithub }/>
             </a>
             </div>
-           <div className="blog__father__container">
+           <div className='blog__father__container'>
             {blog && blog.map(post => 
               <div className='blogs'>
                 <span className='date'>{post.date}january 31, 2003</span>
