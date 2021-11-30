@@ -12,23 +12,23 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 const Blog = () => {
     const [ blog, setBlog ] = useState([])
     
-    useEffect( async() => {
-      
-        let currentFetch = 'http://localhost:3000/posts'
-        
-        const res = await fetch(currentFetch)
-        const blogPost = await res.json()
-        setBlog(blogPost)
-      }
+    useEffect(() => {
+    async function fetchData() {
+    let currentFetch = 'http://localhost:3000/posts'
+    const res = await fetch(currentFetch)
+    const blogPost = await res.json()
+
+    setBlog(blogPost)
+   }
+   fetchData()
+    }, []);
+
       // async() => {
-      //   let currentFetch = 'http://localhost:3000/posts'
+      //   
         
       //   const res = await fetch(currentFetch)
       //   const blogPost = await res.json()
       //   setBlog(blogPost)
-  
-      , []
-  )
 
     // window.addEventListener('DOMContentLoaded', ()=> renderPosts());
 
