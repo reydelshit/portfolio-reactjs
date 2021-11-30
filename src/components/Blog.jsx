@@ -13,13 +13,21 @@ const Blog = () => {
     const [ blog, setBlog ] = useState([])
     
     useEffect( async() => {
+      
         let currentFetch = 'http://localhost:3000/posts'
         
         const res = await fetch(currentFetch)
         const blogPost = await res.json()
         setBlog(blogPost)
-  
       }
+      // async() => {
+      //   let currentFetch = 'http://localhost:3000/posts'
+        
+      //   const res = await fetch(currentFetch)
+      //   const blogPost = await res.json()
+      //   setBlog(blogPost)
+  
+      , []
   )
 
     // window.addEventListener('DOMContentLoaded', ()=> renderPosts());
