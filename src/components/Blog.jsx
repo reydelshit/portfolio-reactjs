@@ -11,16 +11,18 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Blog = () => {
     const [ blog, setBlog ] = useState([])
-    
+
+
+
     useEffect(() => {
     async function fetchData() {
-    let currentFetch = 'http://localhost:3000/posts'
+    let currentFetch = 'https://reydelshit.github.io/database-portfolio/index.json'
     const res = await fetch(currentFetch)
     const blogPost = await res.json()
 
-    setBlog(blogPost)
+    setBlog(blogPost.posts)
    }
-   fetchData()
+    fetchData()
     }, []);
 
       // async() => {
