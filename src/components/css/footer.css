@@ -6,7 +6,6 @@ footer{
     align-items: center;
     justify-content: center;
     background: var(--darkbackground);
-    margin-top: 2rem;
     position: absolute;
     bottom: 0;
     
