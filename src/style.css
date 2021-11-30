@@ -25,7 +25,7 @@
 
 body {
     
-    min-height: 100vh;
+    height: 100vh;
     color: var(--text-color);
     font-family: var(--main-font-poppins345);
     background: var(--darkbackground);
@@ -88,7 +88,7 @@ body.darkmode{
     width: 100vw;
     height: 700px;
     gap: 1rem;
-    padding: 0 5rem;
+    padding: 0 10rem 0 5rem;
 }
 
 .home__inside__container{

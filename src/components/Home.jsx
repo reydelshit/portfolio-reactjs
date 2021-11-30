@@ -2,6 +2,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFacebook  } from '@fortawesome/free-brands-svg-icons'
 import { LightSpeed, Bounce } from 'react-reveal';
+import './css/blog.css'
+import Blog from './Blog';
+
 
 
 const Home = () => {
@@ -44,9 +47,8 @@ const Home = () => {
                     </a>  
                     </Bounce>
                 </div>
-              </div>
-              <div className="blog__container">      
-              </div>
+              </div>         
+              <Blog/>
               
         </section>
      );

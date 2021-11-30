@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --main-font-poppins345: 'Poppins', sans-serif;
+    --main-color: hsla(32, 100%, 45%, 1);
+    --text-color: hsla(0, 0%, 99%, 0.9);
+    --DefaultColor: hsla(173, 96%, 100%, 0.9);
+
+    --menu-color: hsla(173, 96%, 100%, 0.9);
+
+
+    --darkbackground: #22272e;
+    --text-white: hsla(0, 0%, 99%, 0.9);
+    --whitebackground: hsla(0, 0%, 99%, 0.9);
+
+    --footerbg: rgba(223, 220, 220, 0.52);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.blog__container{
+
+    height: 100%;
+    margin-top: 15rem;
+    word-wrap: break-word;
+    width: 35rem;
+    padding: 0 2em;
+
+}
+
+.blog__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.blog__title{
+
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.blogs{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.blogs h2{
+    font-size: 1.6rem;
+}
