@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-
+/* 
 .projects::before{
 
     content: '';
@@ -21,7 +21,7 @@
     width: 0.4rem;
     height: 100%;
     z-index: 3;
-}
+} */
 
 .projects__header, .projects__header h2{
 

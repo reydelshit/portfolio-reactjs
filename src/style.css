@@ -23,7 +23,10 @@
     
 }
 
+
 body {
+
+    height: clamp(100vh, 100%, 700px);
     color: var(--text-color);
     font-family: var(--main-font-poppins345);
     background: var(--darkbackground);
