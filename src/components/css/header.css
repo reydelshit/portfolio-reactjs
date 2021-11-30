@@ -2,7 +2,7 @@
 .menu {
 
     display: flex;
-    width: 25rem;
+    width: 20rem;
     justify-content: space-between;
    
 
@@ -61,8 +61,6 @@
 
 }
 
-
-
 .menu a:hover::after{
 
     transform: scale(1, 1);
@@ -95,9 +93,6 @@ button{
 
     width: 2rem;
     height: 2rem;
-    
-
-
 }
 
 .off{

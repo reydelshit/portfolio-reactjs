@@ -39,7 +39,6 @@ const Header = () => {
               <div className={ menu ? "renderMenu" : "menu"}>
                 <Link to='/' onClick={() => setMenu(false)}>home</Link>
                 <Link to='/projects' onClick={() => setMenu(false)}>projects</Link>
-                <Link to='/blog' onClick={() => setMenu(false)}>blogs</Link>
                 <Link to='/techs'onClick={() => setMenu(false)}>techs</Link>
                 <Link to='/contact'onClick={() => setMenu(false)}>contact</Link>
             </div>

@@ -4,6 +4,8 @@ import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWifi } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { Bounce } from 'react-reveal';
+
 
 
 
@@ -36,6 +38,7 @@ const Blog = () => {
 
     return ( 
         <div className='blog__container'>
+          <Bounce right>
             <div className='blog__header'>
             <h2 className='blog__title'>{blog.length} POSTS <FontAwesomeIcon icon={ faWifi } className='blog__wifi'/></h2>
             <a href='https://github.com/reydelshit'
@@ -52,7 +55,8 @@ const Blog = () => {
                 <h2>{post.title}</h2>
                 <p>{post.body.slice(0, 40)}</p>
               </div>)}
-           </div>         
+           </div>   
+           </Bounce>      
         </div>
      );
 }
