@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
 
 :root{
     --main-font-poppins345: 'Poppins', sans-serif;
@@ -25,13 +27,14 @@
 
 .blog__container{
 
-    height: 100%;
-    margin-top: 15rem;
+    margin: 0;
     word-wrap: break-word;
     width: 35rem;
-    padding: 0 2em;
+    padding: 5rem 2em;
+    max-height: 100%;
 
 }
+
 
 .blog__header{
     display: flex;
@@ -39,10 +42,31 @@
     margin-bottom: 2rem;
 }
 
+.blog__header a{
+    
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: var(--text-white);
+}
+
+.blog__header a:hover{
+    
+    color: var(--main-color);
+}
+
 .blog__title{
 
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1rem;
+}
+
+.blog__father__container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .blogs{
@@ -51,5 +75,41 @@
 }
 
 .blogs h2{
+
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
     font-size: 1.6rem;
+}
+
+.blogs h2:hover{
+
+    color: var(--main-color);
+}
+
+.blogs p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.blogs .date{
+
+    color: var(--footerbg);
+    font-size: 0.9rem;
+}
+
+.blog__wifi{
+    transform: rotate(20deg);
+}
+
+@media screen and (max-width: 995px){
+
+    
+    .blog__container{
+
+        padding: 0 2em;
+        width: 100%;
+
+    }
+
+    
 }

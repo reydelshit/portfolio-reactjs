@@ -1,6 +1,13 @@
 import './css/blog.css'
 
 import { useEffect, useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWifi } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+
+
+
 
 const Blog = () => {
     const [ blog, setBlog ] = useState([])
@@ -20,20 +27,22 @@ const Blog = () => {
     return ( 
         <div className="blog__container">
             <div className="blog__header">
-            <h2 className='blog__title'>{blog.length} new post</h2>
-            <a href='#'>view site code</a>
+            <h2 className='blog__title'>{blog.length} POSTS <FontAwesomeIcon icon={ faWifi } className='blog__wifi'/></h2>
+            <a href='https://github.com/reydelshit'
+            title="Github"
+            target="_blank"
+            rel='noreferrer'
+            >View site code   <FontAwesomeIcon icon={ faGithub }/>
+            </a>
             </div>
            <div className="blog__father__container">
             {blog && blog.map(post => 
               <div className='blogs'>
+                <span className='date'>{post.date}january 31, 2003</span>
                 <h2>{post.title}</h2>
                 <p>{post.body.slice(0, 40)}</p>
               </div>)}
-           </div>
-              
-
-              {/* {blog.length > 7 ? <p>yoww</p> : <p>sss</p>} */}
-              
+           </div>         
         </div>
      );
 }

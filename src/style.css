@@ -24,8 +24,6 @@
 }
 
 body {
-    
-    height: 100vh;
     color: var(--text-color);
     font-family: var(--main-font-poppins345);
     background: var(--darkbackground);
@@ -83,15 +81,14 @@ body.darkmode{
 
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 700px;
     gap: 1rem;
     padding: 0 10rem 0 5rem;
 }
 
 .home__inside__container{
+    padding: 10rem 0;
     width: 35rem;
 }
 
