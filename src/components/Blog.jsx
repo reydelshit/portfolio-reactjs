@@ -7,14 +7,13 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Bounce } from 'react-reveal';
 
 
+import sanityClient  from '../client'
 
 
 
 
 const Blog = () => {
-    const [ blog, setBlog ] = useState([])
-
-
+    const [ blog, setBlog ] = useState(null)
 
     useEffect(() => {
     async function fetchData() {
@@ -26,15 +25,8 @@ const Blog = () => {
    }
     fetchData()
     }, []);
+  
 
-      // async() => {
-      //   
-        
-      //   const res = await fetch(currentFetch)
-      //   const blogPost = await res.json()
-      //   setBlog(blogPost)
-
-    // window.addEventListener('DOMContentLoaded', ()=> renderPosts());
 
     return ( 
         <div className='blog__container'>
