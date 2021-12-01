@@ -7,24 +7,22 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Bounce } from 'react-reveal';
 
 
-import sanityClient  from '../client'
-
 
 
 
 const Blog = () => {
-    const [ blog, setBlog ] = useState(null)
+    const [ blog, setBlog ] = useState([])
 
     useEffect(() => {
-    async function fetchData() {
-    let currentFetch = 'https://reydelshit.github.io/database-portfolio/index.json'
-    const res = await fetch(currentFetch)
-    const blogPost = await res.json()
-
-    setBlog(blogPost.posts)
-   }
-    fetchData()
-    }, []);
+      async function fetchData() {
+      let currentFetch = 'https://reydelshit.github.io/portfolio-admin-panel/portfolio.json'
+      const res = await fetch(currentFetch)
+      const blogPost = await res.json()
+  
+      setBlog(blogPost.posts)
+     }
+      fetchData()
+      }, []);
   
 
 
