@@ -35,14 +35,14 @@ const Header = () => {
              <button className="hamburger" onClick={menuBar}>
                { menu ? <FontAwesomeIcon icon={ faTimes } /> :  <FontAwesomeIcon icon={ faBars } />}
               </button>
-              <Bounce left>
               <div className={ menu ? "renderMenu" : "menu"}>
+                <Bounce when={true}>
                 <Link to='/' onClick={() => setMenu(false)}>home</Link>
                 <Link to='/projects' onClick={() => setMenu(false)}>projects</Link>
                 <Link to='/techs'onClick={() => setMenu(false)}>techs</Link>
                 <Link to='/contact'onClick={() => setMenu(false)}>contact</Link>
+                </Bounce>
             </div>
-            </Bounce>
             <button onClick={changeBg}>
                { bg ? <img src={ Moon } alt='moon' className="off"/> :  <img src={Bulb} alt='bulb' className="on" />}
               </button>

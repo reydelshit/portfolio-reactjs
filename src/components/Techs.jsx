@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVuejs, faHtml5, faSass, faNodeJs, faGitAlt, faFigma, faJs  } from '@fortawesome/free-brands-svg-icons'
 import './css/techs.css'
-import { LightSpeed} from 'react-reveal'
 
 const Skills = () => {
     return ( 
@@ -9,16 +8,11 @@ const Skills = () => {
     <div className="techs">
       <div className="techs__container">
         <div className="techs__header">
-        <LightSpeed left>
           <h2>Techs I've worked with</h2>
-        </LightSpeed>
-        <LightSpeed right>
           <p>Here are some of the technologies I have used in my projects</p>
-          </LightSpeed>
         </div>
         <div className="techss">
           <div className="techs__skill">
-            <LightSpeed left>
                 <div className="techsBro one">
                     <FontAwesomeIcon icon={ faHtml5 } className='icons icons__techs'/>
                     <span className="tech__skill__title">HTML / CSS / Javascript</span>
@@ -34,9 +28,6 @@ const Skills = () => {
                     <span className="tech__skill__title">Node JS</span>
                     <span className="tech__subtitle">Backend Web Development</span>
                 </div>
-            </LightSpeed>
-
-            <LightSpeed right>
             <div className="techsBro four">
               <FontAwesomeIcon icon={ faGitAlt } className='icons icons__techs'/>
               <span className="tech__skill__title">Git / Github</span>
@@ -52,14 +43,11 @@ const Skills = () => {
               <span className="tech__skill__title">TypeScript</span>
               <span className="tech__subtitle">Software Development</span>
             </div>
-            </LightSpeed>
-            <LightSpeed left>
             <div className="techsBro seven">
               <FontAwesomeIcon icon={ faVuejs } className='icons icons__techs'/>
               <span className="tech__skill__title">React JS / Vue JS</span>
               <span className="tech__subtitle">JS Frameworks</span>
             </div>
-            </LightSpeed>
           </div>
         </div>
       </div>

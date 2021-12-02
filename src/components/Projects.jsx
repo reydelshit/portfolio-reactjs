@@ -1,5 +1,4 @@
 import './css/projects.css'
-import { LightSpeed, Bounce } from 'react-reveal';
 
 
 const Projects = () => {
@@ -7,15 +6,10 @@ const Projects = () => {
         <div className="projects" id="projects">
         <div className="projects__container">
           <div className="projects__header">
-            <LightSpeed left>
             <h2>Projects</h2>
-            </LightSpeed> 
-            <LightSpeed right>
             <p>Here are some of my projects</p>
-            </LightSpeed> 
           </div>
           <div className="projects__items">
-          <LightSpeed left delay={450}>
             <div className="project__item1 items">
               <div className="container__item">
                 <div className="item__header">
@@ -43,8 +37,6 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            </LightSpeed>
-            <LightSpeed right delay={450}>
             <div className="project__item2 items">
               <div className="container__item">
                 <div className="item__header">
@@ -80,9 +72,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            </LightSpeed>
           </div>
-          <Bounce bottom>
           <span className="projects__footer"
             >Check out all my projecs on
             <span><a
@@ -91,7 +81,6 @@ const Projects = () => {
                 className="projects__footer__github"
                 rel="noreferrer"
                 > Github</a></span></span>                    
-          </Bounce>
         </div>
       </div>
      );

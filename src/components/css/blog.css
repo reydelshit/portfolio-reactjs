@@ -1,16 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
 
+:root{
+    --main-font-poppins345: 'Poppins', sans-serif;
+    --main-color: hsla(32, 100%, 45%, 1);
+    --text-color: hsla(0, 0%, 99%, 0.9);
+    --DefaultColor: hsla(173, 96%, 100%, 0.9);
+
+    --menu-color: hsla(173, 96%, 100%, 0.9);
+
+
+    --darkbackground: #22272e;
+    --text-white: hsla(0, 0%, 99%, 0.9);
+    --whitebackground: hsla(0, 0%, 99%, 0.9);
+
+    --footerbg: rgba(223, 220, 220, 0.52);
+}
+
 
 .blog__container{
 
     margin: 0;
     word-wrap: break-word;
-    width: 40rem;
+    width: 35rem;
     padding: 5rem 2em;
-    max-height: 100%;
+    height: 100%;
 
 }
-
 
 .blog__header{
     display: flex;
@@ -37,40 +52,23 @@
     font-size: 1rem;
 }
 
-.blog__father__container{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.post__date{
+    font-size: 0.8rem;
 }
 
-.blogs{
-    margin-bottom: 2rem;
+.blog__father__container{
     width: 100%;
 }
 
-.blogs h2{
-
-    cursor: pointer;
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.6rem;
+.blog__holder{
+    margin-bottom: 1rem;
 }
 
-.blogs h2:hover{
+.blog__holder a h1, .blog__holder a{
 
-    color: var(--main-color);
-}
-
-.blogs p{
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.blogs .date{
-
-    color: var(--footerbg);
-    font-size: 0.9rem;
+    font-family: var(--main-font-poppins345);
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .blog__wifi{
@@ -88,4 +86,12 @@
     }
 
     
+}
+
+.spinner{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35rem;
 }
