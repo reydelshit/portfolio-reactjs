@@ -43,7 +43,7 @@ const Header = () => {
                 <Link to='/contact'onClick={() => setMenu(false)}>contact</Link>
                 </Bounce>
             </div>
-            <button onClick={changeBg}>
+            <button className='changeBG__btn' onClick={changeBg}>
                { bg ? <img src={ Moon } alt='moon' className="off"/> :  <img src={Bulb} alt='bulb' className="on" />}
               </button>
         </nav>

@@ -5,7 +5,7 @@
     --main-color: hsla(32, 100%, 45%, 1);
     --text-color: hsla(0, 0%, 99%, 0.9);
     --DefaultColor: hsla(173, 96%, 100%, 0.9);
-
+    --blog-subtitle: hsla(0, 3%, 85%, 0.9);
     --menu-color: hsla(173, 96%, 100%, 0.9);
 
 
@@ -13,7 +13,7 @@
     --text-white: hsla(0, 0%, 99%, 0.9);
     --whitebackground: hsla(0, 0%, 99%, 0.9);
 
-    --footerbg: rgba(223, 220, 220, 0.52);
+    --subtitle: hsla(0, 3%, 85%, 0.9);
 }
 
 
@@ -21,7 +21,7 @@
 
     margin: 0;
     word-wrap: break-word;
-    width: 35rem;
+    width: 40rem;
     padding: 5rem 2em;
     height: 100%;
 
@@ -38,7 +38,7 @@
     text-decoration: none;
     cursor: pointer;
     font-size: 0.8rem;
-    color: var(--text-white);
+    color: var(--text-color);
 }
 
 .blog__header a:hover{
@@ -54,6 +54,7 @@
 
 .post__date{
     font-size: 0.8rem;
+    color: var(--subtitle);
 }
 
 .blog__father__container{
@@ -68,8 +69,68 @@
 
     font-family: var(--main-font-poppins345);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
 }
+
+.blog__holder h1{
+    
+    text-indent: 0.1em;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: ease-in 0.1s;
+}
+
+.blog__holder h1::after{
+
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--main-color);
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.blog__holder h1::before{
+
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--main-color);
+    transform: scale(0, 1);
+    transform-origin: 100% 0%;
+    transition: transform 0.3s ease-in-out;
+    transition-delay: 0.3s;
+
+}
+
+.blog__holder h1:hover::after{
+
+    transform: scale(1, 1);
+}
+
+.blog__holder h1:hover::before{
+    transform: scale(1, 1);
+}
+
+.blog__holder p{
+    color: var(--blog-subtitle);
+    font-weight: 200;
+}
+
 
 .blog__wifi{
     transform: rotate(20deg);

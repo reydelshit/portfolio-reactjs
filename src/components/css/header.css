@@ -117,7 +117,7 @@ button{
         padding-left: 2rem;
     }
 
-    button{
+    .changeBG__btn{
         z-index: 2;
     }
 

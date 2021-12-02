@@ -85,7 +85,7 @@ fetchPosts = async () => {
               <a key={index} href={`https://reydelp.hashnode.dev/${post.slug}`} >
               <h1>{post.title}</h1>
               </a>
-              <p>{post.brief}</p>
+              <p>{post.brief.slice(0, 50)}....</p>
               </div>
               )}
            </div>        

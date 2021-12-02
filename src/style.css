@@ -23,6 +23,12 @@
     
 }
 
+*::before, *::after {
+    border-width: 0;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
 
 body {
 
@@ -73,6 +79,10 @@ body.darkmode{
     --darkbackground: hsla(0, 0%, 99%, 0.9);
     --text-color: hsla(0, 0%, 0%, 0.9);
     --menu-color: #22272e;
+
+    --subtitle: hsla(0, 0%, 22%, 0.9);
+    --blog-subtitle: hsla(0, 2%, 10%, 0.9);
+
 
 }
 
