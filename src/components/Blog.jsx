@@ -83,9 +83,9 @@ fetchPosts = async () => {
                 day: "2-digit"
              }).format(new Date(post.dateAdded))}</span>
               <a key={index} href={`https://reydelp.hashnode.dev/${post.slug}`} >
-              <h1>{post.title}</h1>
+              {post.title}
               </a>
-              <p>{post.brief.slice(0, 50)}....</p>
+              <p>{post.brief}</p>
               </div>
               )}
            </div>        

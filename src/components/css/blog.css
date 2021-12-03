@@ -65,16 +65,13 @@
     margin-bottom: 1rem;
 }
 
-.blog__holder a h1, .blog__holder a{
+.blog__holder a{
 
+    display: block;
     font-family: var(--main-font-poppins345);
     text-decoration: none;
     font-size: 1.4rem;
     color: var(--text-color);
-}
-
-.blog__holder h1{
-    
     text-indent: 0.1em;
     font-weight: 600;
     cursor: pointer;
@@ -82,9 +79,9 @@
     transition: ease-in 0.1s;
 }
 
-.blog__holder h1::after{
+.blog__holder a::after{
 
-    display: block;
+    /* display: block; */
     position: absolute;
     content: '';
     width: 100%;
@@ -99,7 +96,12 @@
 
 }
 
-.blog__holder h1::before{
+.blog__holder a:hover::after{
+
+    transform: scale(1, 1);
+}
+
+.blog__holder a::before{
 
     display: block;
     position: absolute;
@@ -115,14 +117,9 @@
     transition: transform 0.3s ease-in-out;
     transition-delay: 0.3s;
 
-}
+} 
 
-.blog__holder h1:hover::after{
-
-    transform: scale(1, 1);
-}
-
-.blog__holder h1:hover::before{
+.blog__holder a:hover::before{
     transform: scale(1, 1);
 }
 
